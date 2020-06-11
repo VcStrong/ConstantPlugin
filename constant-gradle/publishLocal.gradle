@@ -4,11 +4,14 @@ version = '0.0.1alpha'
 
 uploadArchives {
     repositories {
-
         mavenDeployer {
             // 发布到本地路径直接测试
-            repository(url:uri('../repo'))
+            repository(url:uri('/Users/yintao/Documents/dingtao/JavaWeb/MavenRepository'))
         }
+//        mavenDeployer {
+//            // 发布到本地路径直接测试
+//            repository(url:uri('../repo'))
+//        }
     }
     doLast {
         // 删除生成的build/lib文件夹
