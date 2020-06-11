@@ -1,0 +1,2 @@
+include ':constant-gradle'
+rootProject.name = "ConstantPlugin"

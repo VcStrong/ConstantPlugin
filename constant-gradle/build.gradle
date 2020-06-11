@@ -1,0 +1,13 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+dependencies {
+    implementation gradleApi()
+    implementation localGroovy()
+}
+
+// 发布到本地测试用
+apply from: 'publishLocal.gradle'
+
+// 引用发布脚本
+//apply from: 'bintray.gradle'
