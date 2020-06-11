@@ -13,3 +13,7 @@
 .externalNativeBuild
 .cxx
 /.idea/
+/gradle/wrapper/
+/gradlew
+/gradlew.bat
+/constant-gradle/remote.gradle
