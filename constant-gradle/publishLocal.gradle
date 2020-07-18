@@ -1,17 +1,16 @@
-// 发布到本地测试用
-group = 'com.vc.plugin'
-version = '0.0.1alpha'
-
 uploadArchives {
     repositories {
-        mavenDeployer {
-            // 发布到本地路径直接测试
-            repository(url:uri('/Users/yintao/Documents/dingtao/JavaWeb/MavenRepository'))
-        }
 //        mavenDeployer {
 //            // 发布到本地路径直接测试
-//            repository(url:uri('../repo'))
+//            repository(url:uri('/Users/yintao/Documents/dingtao/JavaWeb/MavenRepository'))
 //        }
+        mavenDeployer {
+            // 发布到本地路径直接测试
+            repository(url:uri('../repo'))
+            pom.groupId = 'com.github.VcStrong'  //groupId ，自行定义，一般是包名
+            pom.artifactId = 'ConstantPlugin' //artifactId ，自行定义
+            pom.version = '0.0.1' //version 版本号
+        }
     }
     doLast {
         // 删除生成的build/lib文件夹
